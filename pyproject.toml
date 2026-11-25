@@ -1,0 +1,29 @@
+[project]
+name = "habit10x-marketing-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vishalrewaskar", email = "rewaskarvishal43@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "openpyxl>=3.1.5",
+    "psycopg[binary]>=3.3.9",
+    "pydantic-settings>=2.16.3",
+    "streamlit>=1.67.0",
+    "yt-dlp>=2026.11.23",
+]
+
+[project.scripts]
+traction = "habit10x_marketing_automation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
